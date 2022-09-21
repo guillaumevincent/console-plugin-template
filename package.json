@@ -17,6 +17,7 @@
     "@openshift-console/dynamic-plugin-sdk": "0.0.12",
     "@openshift-console/dynamic-plugin-sdk-webpack": "0.0.7",
     "@patternfly/react-core": "4.221.3",
+    "@patternfly/react-icons": "^4.90.0",
     "@types/node": "^18.0.0",
     "@types/react": "^17.0.37",
     "@types/react-helmet": "^6.1.4",
@@ -48,12 +49,13 @@
     "webpack-dev-server": "^4.7.4"
   },
   "consolePlugin": {
-    "name": "console-plugin-template",
+    "name": "assisted-ui",
     "version": "0.0.1",
-    "displayName": "OpenShift Console Plugin Template",
-    "description": "Template project for OpenShift console plugins. Edit package.json to change this message and the plugin name.",
+    "displayName": "Assisted Installer",
+    "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
     "exposedModules": {
-      "ExamplePage": "./components/ExamplePage"
+      "ClustersPage": "./ClustersPage",
+      "NewClusterPage": "./NewClusterPage"
     },
     "dependencies": {
       "@console/pluginAPI": "*"

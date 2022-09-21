@@ -3,18 +3,25 @@
     "type": "console.page/route",
     "properties": {
       "exact": true,
-      "path": "/example",
-      "component": { "$codeRef": "ExamplePage" }
+      "path": "/assisted-installer/clusters",
+      "component": { "$codeRef": "ClustersPage" }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/assisted-installer/clusters/~new",
+      "component": { "$codeRef": "NewClusterPage" }
     }
   },
   {
     "type": "console.navigation/href",
     "properties": {
-      "id": "example",
-      "name": "Plugin Example",
-      "href": "/example",
-      "perspective": "admin",
-      "section": "home"
+      "id": "assisted-ui",
+      "name": "Assisted cluster",
+      "href": "/assisted-installer/clusters",
+      "section": "builds"
     }
   }
 ]
